@@ -3,14 +3,23 @@ name = "nlp_labs"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
+    "en-core-web-sm",
+    "ftfy>=6.3.1",
+    "matplotlib>=3.11.2",
     "nltk>=3.10.4",
     "numpy>=2.5.4",
     "pandas>=3.1.0",
+    "pycld2>=0.42",
+    "regex>=2026.11.9",
     "requests>=2.34.2",
     "scikit-learn>=1.9.1",
+    "spacy>=3.8.18",
 ]
 
 [dependency-groups]
 dev = [
     "ipykernel>=7.4.0",
 ]
+
+[tool.uv.sources]
+en-core-web-sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" }
